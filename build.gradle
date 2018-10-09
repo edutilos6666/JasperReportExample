@@ -1,0 +1,27 @@
+plugins {
+    id 'groovy'
+    id 'java'
+}
+
+group 'com.edutilos'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.codehaus.groovy:groovy-all:2.3.11'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    // https://mvnrepository.com/artifact/net.sf.jasperreports/jasperreports
+    compile group: 'net.sf.jasperreports', name: 'jasperreports', version: '6.7.0'
+// https://mvnrepository.com/artifact/org.projectlombok/lombok
+    compile group: 'org.projectlombok', name: 'lombok', version: '1.18.2'
+// https://mvnrepository.com/artifact/mysql/mysql-connector-java
+    compile group: 'mysql', name: 'mysql-connector-java', version: '8.0.12'
+// https://mvnrepository.com/artifact/xalan/xalan
+    compile group: 'xalan', name: 'xalan', version: '2.7.1'
+
+}
